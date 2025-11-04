@@ -43,6 +43,12 @@ namespace Calendar_App
         /// </summary>
         public string Person { get; set; }
 
+        /// <summary>
+        /// Returns a string representation of the event, including its title, description, assigned person, and start
+        /// and end times.
+        /// </summary>
+        /// <returns>A string that summarizes the event details, including the title, description, assigned person, and the start
+        /// and end times.</returns>
         public override string ToString()
         {
             return "Your event is " + this.Title + ". The description is " + this.Description + " to be done by " + this.Person + ". Starting at " + this.StartDateTime + " and ending at " + this.EndDateTime;
