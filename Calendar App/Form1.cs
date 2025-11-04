@@ -6,5 +6,19 @@ namespace Calendar_App
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            Event myEvent = new Event()
+            {
+                Title           = txtTitle.Text,
+                Description     = txtDescription.Text,
+                Person          = txtPerson.Text,
+                StartDateTime   = dtpStartDate.Value,
+                EndDateTime     = dtpEndDate.Value
+            };
+
+            MessageBox.Show(myEvent.ToString());
+        }
     }
 }
